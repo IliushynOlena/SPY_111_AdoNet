@@ -17,15 +17,17 @@ namespace _03_SportShopWF
                             Initial Catalog=SportShop;
                             Integrated Security=True;
                             Connect Timeout=2;";
+        SportShopDb db;
         public Form1()
         {
-            SportShopDb db = new SportShopDb(conn);
+             db = new SportShopDb(conn);
             InitializeComponent();
+            dataGridView1.Size = new Size(2600, 2600);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.Ite
+            dataGridView1.DataSource = db.GetAll();
         }
     }
 }
