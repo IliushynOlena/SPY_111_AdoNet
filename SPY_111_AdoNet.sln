@@ -1,17 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32901.82
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Ado_Net", "01_Ado_Net\01_Ado_Net.csproj", "{E369087E-C72B-45CC-AC83-D2AD5B59E7B3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_connectedMode", "02_connectedMode\02_connectedMode.csproj", "{CABFDC1D-150A-4BD2-8B65-AB720C5EC463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_SportShopWF", "03_SportShopWF\03_SportShopWF.csproj", "{D7643B5F-E996-44C6-851B-AB3CF49E1CE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_SportShopWF", "03_SportShopWF\03_SportShopWF.csproj", "{D7643B5F-E996-44C6-851B-AB3CF49E1CE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_data_access", "04_data_access\04_data_access.csproj", "{43E3922F-B4CD-456D-85F1-96AD60F1907B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_data_access", "04_data_access\04_data_access.csproj", "{43E3922F-B4CD-456D-85F1-96AD60F1907B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_SportShopWPF", "05_SportShopWPF\05_SportShopWPF.csproj", "{DEEF3D24-E25F-4D91-BC23-4EE08317EA54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_SportShopWPF", "05_SportShopWPF\05_SportShopWPF.csproj", "{DEEF3D24-E25F-4D91-BC23-4EE08317EA54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_LINQSQL", "05_LINQSQL\05_LINQSQL.csproj", "{897A39BB-338E-4B54-99DA-A865BFF574FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{DEEF3D24-E25F-4D91-BC23-4EE08317EA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEEF3D24-E25F-4D91-BC23-4EE08317EA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEEF3D24-E25F-4D91-BC23-4EE08317EA54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897A39BB-338E-4B54-99DA-A865BFF574FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897A39BB-338E-4B54-99DA-A865BFF574FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897A39BB-338E-4B54-99DA-A865BFF574FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897A39BB-338E-4B54-99DA-A865BFF574FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
