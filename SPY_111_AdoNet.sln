@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_SportShopWPF", "05_Sport
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_LINQSQL", "05_LINQSQL\05_LINQSQL.csproj", "{897A39BB-338E-4B54-99DA-A865BFF574FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_IntroToEntityFramework", "06_IntroToEntityFramework\06_IntroToEntityFramework.csproj", "{451AF29F-99E4-437F-B2A5-3C2BF454FA44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{897A39BB-338E-4B54-99DA-A865BFF574FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{897A39BB-338E-4B54-99DA-A865BFF574FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{897A39BB-338E-4B54-99DA-A865BFF574FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{451AF29F-99E4-437F-B2A5-3C2BF454FA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451AF29F-99E4-437F-B2A5-3C2BF454FA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451AF29F-99E4-437F-B2A5-3C2BF454FA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451AF29F-99E4-437F-B2A5-3C2BF454FA44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
