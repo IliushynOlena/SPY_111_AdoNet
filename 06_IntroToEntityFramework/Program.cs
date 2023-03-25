@@ -1,9 +1,8 @@
-﻿using _06_IntroToEntityFramework;
-using System;
+﻿using System;
 using System.Data.SqlClient;
 using System.Text;
 
-namespace _01_Ado_Net
+namespace _06_IntroToEntityFramework
 {
     internal class Program
     {
