@@ -49,7 +49,6 @@ namespace _06_02_EntityFramework
                      Id = 2, Model = "Am 727", MaxPassangers = 90
                 }
             });
-
             modelBuilder.Entity<Flight>().HasData(new Flight[]
             {
                 new Flight()
@@ -72,6 +71,34 @@ namespace _06_02_EntityFramework
                       AirplaneId = 2
                 }
             });
+
+            //Fluent API configurations
+            modelBuilder.Entity<Airplane>().Property(a => a.Model).HasMaxLength(100).IsRequired();
+            modelBuilder.Entity<Client>().ToTable("Passengers");
+            modelBuilder.Entity<Client>()
+                .Property(c=>c.Name)
+                .IsRequired()
+                .HasMaxLength(100)
+                .HasColumnName("FirstName");
+            modelBuilder.Entity<Client>().Property(c => c.Email)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            modelBuilder.Entity<Flight>().HasKey(f => f.Number);//set primary key
+            modelBuilder.Entity<Flight>().Property(f=>f.ArrivelCity)
+                .IsRequired()
+                .HasMaxLength(100);
+            modelBuilder.Entity<Flight>().Property(f => f.DepartureCity)
+              .IsRequired()
+              .HasMaxLength(100);
+            //Relationship configurations
+            modelBuilder.Entity<Client>().HasMany(c=>c.Flights).WithMany(f=>f.Clients);//or
+            //modelBuilder.Entity<Flight>().HasMany(f => f.Clients).WithMany(c => c.Flights);
+
+            modelBuilder.Entity<Airplane>()
+                .HasMany(a => a.Flights)
+                .WithOne(f => f.Airplane)
+                .HasForeignKey(f=>f.AirplaneId);
         }
     }
 }
