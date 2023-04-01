@@ -16,7 +16,7 @@ namespace _06_02_EntityFramework
                 Birthdate = new DateTime(2006, 7, 9),
                 Email = "volodia@gmail.com"
             });
-            context.SaveChanges();
+            //context.SaveChanges();
 
             //foreach (var c in context.Clients)
             //{
