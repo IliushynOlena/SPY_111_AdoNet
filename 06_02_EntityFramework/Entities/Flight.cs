@@ -12,7 +12,7 @@ namespace _06_02_EntityFramework.Entities
         public DateTime DepartureTime { get; set; }    
         public string ArrivelCity { get; set; }  
         public string DepartureCity { get; set; }    
-        public int AirplaneId { get; set; }
+        public int? AirplaneId { get; set; }
 
         //Navigation property
         public Airplane Airplane { get; set; }
