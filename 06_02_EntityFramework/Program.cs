@@ -23,12 +23,23 @@ namespace _06_02_EntityFramework
             //    Console.WriteLine($"Client : {c.Name}  {c.Email}  {c.Birthdate}");
             //}
 
-            var res = context.Flights.Include(f=>f.Airplane).Where(f => f.ArrivelCity == "Lviv").OrderBy(f => f.DepartureTime);
+            var res = context.Flights
+                .Include(f=>f.Airplane)//like JOIN in SQL
+                .Where(f => f.ArrivelCity == "Lviv")
+                .OrderBy(f => f.DepartureTime);
 
             foreach (var f in res)
             {
                 Console.WriteLine($"Flight : {f.Number}  {f.DepartureCity}  " +
-                    $"{f.ArrivelCity} Id Airplane {f.AirplaneId} Airplane: {f.Airplane?.Model}");
+                    $"{f.ArrivelCity} Id Airplane {f.AirplaneId} Airplane: {f.Airplane?.Model} {f.Airplane?.MaxPassangers}");
+            }
+
+            var client =  context.Clients.Find(2);
+            context.Entry(client).Collection(c => c.Flights).Load();
+            Console.WriteLine($"Client : {client.Id}  {client.Name}.  Flights : {client.Flights?.Count} ");
+            foreach (var f in client.Flights)
+            {
+                Console.WriteLine( $" {f.Number}  {f.ArrivelCity} {f.DepartureCity}  {f.DepartureTime.ToShortDateString()}");
             }
         }
     }
